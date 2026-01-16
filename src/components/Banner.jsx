@@ -1,9 +1,9 @@
-import bannerImg from "../assets/banner1.png";
+
 
 export default function Banner() {
   return (
     <img
-      src={bannerImg}
+      src="/banner1.png"
       alt="Banner"
       style={{
         width: "100%",
