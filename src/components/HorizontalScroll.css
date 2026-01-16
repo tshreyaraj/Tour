@@ -1,0 +1,46 @@
+/* viewport */
+.slide-viewport {
+  overflow: hidden;
+  width: 100%;
+  margin-bottom: 24px;
+}
+
+/* sliding track */
+.slide-track {
+  display: flex;
+  width: 200%;                 /* important */
+  gap: 16px;
+  animation: slideLoop 8s linear infinite;
+}
+
+/* cards */
+.slide-card {
+  width: 50%;                  /* ONLY 2 cards visible */
+  background: #fff;
+  border-radius: 12px;
+  padding: 12px;
+  box-sizing: border-box;
+}
+
+.slide-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+/* seamless loop animation */
+@keyframes slideLoop {
+  0% {
+    transform: translateX(0);
+  }
+
+  12.5% {
+    transform: translateX(0); /* pause ~1s */
+  }
+
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
