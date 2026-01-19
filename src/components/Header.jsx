@@ -27,7 +27,7 @@ export default function Header() {
         </button>
       </header>
 
-      {/* Mobile Menu */}
+      {/* Overlay Mobile Menu */}
       {open && (
         <div className="mobile-menu">
           <span>New Launches</span>

@@ -41,12 +41,22 @@
   cursor: pointer;
 }
 
-/* Mobile Menu */
+/* 🔥 OVERLAY MOBILE MENU */
 .mobile-menu {
-  display: none;
+  position: absolute;          /* IMPORTANT */
+  top: 70px;                   /* height of header */
+  left: 0;
+  width: 100%;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding: 20px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+  z-index: 999;                /* above content */
 }
 
-/* 📱 Mobile (Android) */
+/* 📱 Mobile */
 @media (max-width: 768px) {
   .menu {
     display: none;
@@ -58,15 +68,6 @@
 
   .hamburger {
     display: block;
-  }
-
-  .mobile-menu {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-    background: #fff;
-    padding: 20px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
   }
 
   .mobile-login {
