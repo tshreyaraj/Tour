@@ -1,3 +1,5 @@
+import "./Sidebar.css";
+
 export default function Sidebar() {
   const filters = [
     "Republic Day",
@@ -10,48 +12,23 @@ export default function Sidebar() {
     "Biking",
     "All Girls Trips",
     "Weekend Getaways",
-    "Backpacking Trips",
-    "Himalayan Treks",
-    "Biking (Motorbike Tours)",
     "Photography Tours",
     "Adventure Sports",
     "Family Vacations",
     "Corporate Offsites",
     "Solo Travel",
     "Cultural Immersion",
-    "Biking",
-    "All Girls Trips",
-    "Weekend Getaways",
-    "Backpacking Trips",
-    "Himalayan Treks",
-
-
   ];
 
   return (
-    <div style={styles.sidebar}>
+    <aside className="sidebar">
       <h4>Select from our tours</h4>
 
       {filters.map((item, i) => (
-        <label key={i} style={styles.label}>
+        <label key={i} className="sidebar-label">
           <input type="checkbox" /> {item}
         </label>
       ))}
-    </div>
+    </aside>
   );
 }
-
-const styles = {
-  sidebar: {
-    width: "260px",
-    background: "#fff",
-    padding: "9px",
-    borderRadius: "10px",
-    height: "fit-content"
-  },
-  label: {
-    display: "block",
-    margin: "10px 0",
-    fontSize: "14px"
-  }
-};

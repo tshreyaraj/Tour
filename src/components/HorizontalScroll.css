@@ -2,25 +2,31 @@
 .slide-viewport {
   overflow: hidden;
   width: 100%;
-  margin-bottom: 24px;
 }
 
 /* sliding track */
 .slide-track {
   display: flex;
-  width: 200%;                 /* important */
+  width: 200%;
   gap: 16px;
   animation: slideLoop 8s linear infinite;
 }
 
-/* cards */
+/* Desktop */
 .slide-card {
-  width: 50%;                  /* ONLY 2 cards visible */
-  background: #fff;
-  border-radius: 12px;
-  padding: 12px;
-  box-sizing: border-box;
+  width: 50%;
 }
+
+/* Mobile */
+@media (max-width: 768px) {
+  .slide-track {
+    width: max-content;   /* 🔥 KEY FIX */
+  }
+
+}
+
+
+
 
 .slide-card img {
   width: 100%;

@@ -7,7 +7,7 @@ export default function TourGrid() {
     <div style={{ flex: 1 }}>
       <HorizontalScroll />
 
-      <div style={{ margin: "20px 0" }}>
+      <div>
         <Banner />
       </div>
 

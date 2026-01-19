@@ -1,14 +1,26 @@
-@import "tailwindcss";
-body {
-  margin-left:150px;
-  margin-right:150px;
-  margin-bottom:50px;
-  font-family: Arial, Helvetica, sans-serif;
-  background-color: #f3f4f6;
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
-.container {
-  display: flex;
-  padding: 20px;
-  gap: 20px;
+
+/* Desktop container spacing */
+@media (min-width: 1025px) {
+  body {
+    padding: 0 120px;
+  }
+}
+
+/* Tablet */
+@media (max-width: 1024px) {
+  body {
+    padding: 0 40px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  body {
+    padding: 0 12px;
+  }
 }

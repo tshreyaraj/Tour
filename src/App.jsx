@@ -1,19 +1,18 @@
 import Header from "./components/Header";
 import Sidebar from "./components/Sidebar";
 import TourGrid from "./components/TourGrid";
+import "./App.css";
 
 function App() {
   return (
     <>
       <Header />
-     <div style={{ display: "flex", gap: "20px", padding: "20px" }}>
-  <Sidebar />
-  <TourGrid />
-     </div>
-
+      <div className="page">
+        <Sidebar />
+        <TourGrid />
+      </div>
     </>
   );
 }
 
 export default App;
-  

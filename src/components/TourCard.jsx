@@ -37,12 +37,11 @@ export default function TourCard({ tour }) {
 }
 
 const styles = {
-  card: {
-    width: "320px",
-    background: "#fff",
-    borderRadius: "12px",
-    overflow: "hidden",
-  },
+card: {
+  width: "100%",
+  maxWidth: "320px",
+}
+,
 
   sliderWrapper: {
     width: "100%",
